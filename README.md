@@ -1,6 +1,6 @@
-# Shop API
+# Shops API
 
-In order to keep track of shops, retail managers can use RESTful clients and submit POST requests to shop api. API will store the address details (fetched from google maps api) in a memory along with geo co-ordinates of the shop.
+In order to keep track of shops, retail manager(s) can use RESTful clients and submit POST requests to shop api. API will store the address details (fetched from google maps api) in a memory along with geo co-ordinates of the shop.
 
 Customers can use the same api and find out store near to them.
 
