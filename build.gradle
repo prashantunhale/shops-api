@@ -1,0 +1,31 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.3.RELEASE'
+}
+
+group 'com.db'
+version '0.1.0'
+description = "Shops API"
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+jar {
+    baseName = 'shops-api'
+    version =  '0.0.1-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.3.RELEASE")
+    compile("org.springframework.boot:spring-boot-starter-actuator:1.5.3.RELEASE")
+    compile("com.google.maps:google-maps-services:0.1.20")
+
+    testCompile("org.springframework.boot:spring-boot-starter-test:1.5.3.RELEASE")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
